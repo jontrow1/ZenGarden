@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;800&family=Turret+Road:wght@400;700;800&display=swap");
+body {
+  font-family: "Raleway", sans-serif;
+  /*background-color: #EEd29e;*/
+  background-color: #EEF0E9;
+  color: #684F30;
+  margin: 0 auto;
+  /* max-width: 400px;
+   width: 100%;*/
+}
+
+header {
+  padding: 1px 15px;
+  background-image: url(images/3gears-06.png);
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position-x: right;
+  background-position-y: 105px;
+}
+
+.intro, .main, .wrapper {
+  padding: 1px 15px;
+}
+
+h1, h2, h3 {
+  font-family: "Turret Road", cursive;
+  color: #684F30;
+}
+
+h1 {
+  margin-bottom: -30px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 3.5rem;
+  line-height: 0.9em;
+  /*overflow-wrap: break-word;*/
+  width: 70%;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: -0.5rem;
+}
+
+abbr[title] {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: #5E0730;
+}
+
+a:hover {
+  color: #EEF0E9;
+  background-color: #5E0730;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  padding-bottom: 15px;
+}
+
+.summary {
+  margin-top: 190px;
+}
+.summary p {
+  display: inline;
+}
+
+.summary, .explanation, .benefits {
+  padding: 0.5rem 3rem;
+}
+
+.preamble, .preamble h3,
+.participation, .participation h3,
+.requirements, .requirements h3 {
+  background-color: #684F30;
+  color: #EEd29e;
+  padding: 0.5rem 3rem;
+}
+
+.preamble h3, .participation h3, .requirements h3 {
+  padding-left: 0;
+}
+
+.participation a, .requirements a {
+  color: #EEF0E9;
+}
+
+.select, .archives, .next, .resources {
+  display: none;
+}
+
+.design-selection, .design-archives {
+  background-color: black;
+  color: #EEF0E9;
+  margin-top: -75px;
+  padding: 0.5rem 3rem;
+}
+
+.design-selection a, .viewall a {
+  color: #EEF0E9;
+}
+
+.design-archives {
+  margin-top: -25px;
+  padding-bottom: 50px;
+}
+
+.design-name, .viewall {
+  font-weight: bold;
+  display: block;
+  font-variant-caps: all-small-caps;
+  font-size: 1.5rem;
+}
+
+.designer-name {
+  font-style: italic;
+}
+
+.zen-resources {
+  text-align: right;
+  position: absolute;
+  right: 15px;
+  top: 18rem;
+}
+
+p[role=contentinfo] {
+  background-color: transparent;
+  color: #EEF0E9;
+  text-align: center;
+  /*width: 138.5%;
+  /*padding: 10px 25px;*/
+  width: 92vw;
+  margin-left: -48px;
+  position: relative;
+  top: 610px;
+}
+
+p[role=contentinfo] a {
+  color: #EEF0E9;
+  font-style: italic;
+}
+
+footer {
+  display: none;
+}
+
+/* Testing out reorder with grid */
+/*.page-wrapper {
+    display: grid;
+    grid-column: 1fr;
+    grid-template-areas: 'header' 'resources' 'summary' 'preamble' 'explanation' 'participation' 'benefits' 'requirements' 'selection' 'archives' 'contentinfo' 'footer';
+}
+
+header {grid-area: 'header';}
+
+.zen-resources {grid-area: 'resources';}
+
+.summary {grid-area: 'summary';}
+
+.preamble {grid-area: 'preamble';}
+
+.explanation {grid-area: 'explanation';}
+
+.participation {grid-area: 'participation';}
+
+.benefits {grid-area: 'benefits';}
+
+.requirements {grid-area: 'requirements';}
+
+.design-selection {grid-area: 'selection';}
+
+.design-archives {grid-area: 'archives';}
+
+p[role=contentinfo] {grid-area: 'contentinfo';}
+
+footer {grid-row: 'footer';}*/
+@media (min-width: 45em) {
+  body {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  header {
+    padding: 0 50px;
+    padding: 1px 30px;
+    background-image: url(images/3gears-06.png);
+    background-repeat: no-repeat;
+    background-size: 325px;
+    background-position-x: 430px;
+    background-position-y: 150px;
+  }
+  header h1 {
+    font-size: 40px;
+  }
+  header h2 {
+    font-size: 100px;
+    margin: 75px;
+    text-indent: -75px;
+    max-width: 400px;
+  }
+
+  .zen-resources {
+    text-align: right;
+    position: absolute;
+    top: 0;
+    right: 15px;
+  }
+
+  .summary {
+    margin-top: 0;
+  }
+
+  .summary, .preamble, #zen-supporting {
+    margin-left: 350px;
+  }
+
+  .design-selection {
+    position: absolute;
+    top: 625px;
+    left: 20px;
+    padding-bottom: 70px;
+  }
+
+  .design-archives {
+    position: absolute;
+    top: 1100px;
+    left: 20px;
+    padding-bottom: 0;
+  }
+
+  .design-selection, .design-archives {
+    color: #5E0730;
+    background-color: #EED29E;
+  }
+
+  .design-selection a, .design-archives a {
+    text-decoration: none;
+    color: #5E0730;
+  }
+
+  .design-selection a:hover, .design-archives a:hover {
+    color: #EEF0E9;
+    background-color: #5E0730;
+  }
+
+  p[role=contentinfo] {
+    background-color: black;
+    width: 145%;
+    padding: 0.5rem 3rem;
+    position: static;
+    margin-left: -410px;
+    margin-bottom: -10px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

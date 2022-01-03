@@ -1,0 +1,494 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;800&family=Turret+Road:wght@400;700;800&display=swap");
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-ms-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes counter {
+  from {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@-moz-keyframes counter {
+  from {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@-ms-keyframes counter {
+  from {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@-o-keyframes counter {
+  from {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@keyframes counter {
+  from {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #EEF0E9;
+  color: #684F30;
+  margin: 0 auto;
+}
+
+header {
+  padding: 1px 15px;
+}
+
+header:before {
+  background: url("images/gear4.svg") no-repeat;
+  content: "";
+  height: 150px;
+  position: fixed;
+  width: 150px;
+  top: 10px;
+  left: 205px;
+  z-index: -1;
+}
+
+header:before {
+  animation: spin 12s infinite linear;
+  -webkit-animation: spin 12s infinite linear;
+  -moz-animation: spin 12s infinite linear;
+  -ms-animation: spin 12s infinite linear;
+  -o-animation: spin 12s infinite linear;
+}
+
+header:after {
+  background: url("images/gear1.svg") no-repeat;
+  content: "";
+  height: 150px;
+  position: fixed;
+  width: 150px;
+  top: 60px;
+  left: 345px;
+  z-index: -1;
+}
+
+header:after {
+  animation: counter 12s infinite linear;
+  -webkit-animation: counter 12s infinite linear;
+  -moz-animation: counter 12s infinite linear;
+  -ms-animation: counter 12s infinite linear;
+  -o-animation: counter 12s infinite linear;
+}
+
+.intro:after {
+  background: url("images/gear3.svg") no-repeat;
+  background-size: 135%;
+  content: "";
+  height: 200px;
+  position: fixed;
+  width: 200px;
+  top: 160px;
+  left: 200px;
+  z-index: -2;
+}
+
+.intro:after {
+  animation: spin 12s infinite linear;
+  -webkit-animation: spin 12s infinite linear;
+  -moz-animation: spin 12s infinite linear;
+  -ms-animation: spin 12s infinite linear;
+  -o-animation: spin 12s infinite linear;
+}
+
+.intro, .main, .wrapper {
+  padding: 1px 15px;
+}
+
+h1, h2, h3 {
+  font-family: "Turret Road", cursive;
+  color: #684F30;
+}
+
+h1 {
+  margin-bottom: -30px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 3.5rem;
+  line-height: 0.9em;
+  /*overflow-wrap: break-word;*/
+  width: 70%;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: -0.5rem;
+}
+
+abbr[title] {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: #5E0730;
+}
+
+a:hover {
+  color: #EEF0E9;
+  background-color: #5E0730;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  padding-bottom: 15px;
+}
+
+.summary {
+  margin-top: 190px;
+}
+.summary p {
+  display: inline;
+}
+
+.summary, .explanation, .benefits {
+  padding: 0.5rem 2rem;
+}
+
+.preamble, .preamble h3,
+.participation, .participation h3,
+.requirements, .requirements h3 {
+  background-color: #684F30;
+  color: #EEd29e;
+  padding: 0.5rem 2rem;
+}
+
+.preamble h3, .participation h3, .requirements h3 {
+  padding-left: 0;
+  background-color: transparent;
+}
+
+.participation a, .requirements a {
+  color: #EEF0E9;
+}
+
+.select, .archives, .next, .resources {
+  display: none;
+}
+
+.design-selection, .design-archives {
+  background-color: black;
+  color: #EEF0E9;
+  margin-top: -75px;
+  padding: 0.5rem 2rem;
+}
+
+.design-selection a, .viewall a {
+  color: #EEF0E9;
+}
+
+.design-archives {
+  margin-top: -25px;
+  padding-bottom: 50px;
+}
+
+.design-name, .viewall {
+  font-weight: bold;
+  display: block;
+  font-variant-caps: all-small-caps;
+  font-size: 1.5rem;
+}
+
+.designer-name {
+  font-style: italic;
+}
+
+.zen-resources {
+  font-weight: bold;
+  text-align: right;
+  position: absolute;
+  right: 15px;
+  top: 20rem;
+}
+
+p[role=contentinfo] {
+  background-color: transparent;
+  color: #EEF0E9;
+  text-align: center;
+  width: 92vw;
+  margin-left: -32px;
+  position: relative;
+  top: 610px;
+}
+
+p[role=contentinfo] a {
+  color: #EEF0E9;
+  font-style: italic;
+}
+
+footer {
+  position: relative;
+  top: -50px;
+  z-index: 5;
+  padding-left: 2rem;
+}
+
+footer a {
+  color: #EEF0E9;
+}
+
+@media (min-width: 45em) {
+  body {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  header {
+    padding: 0 50px;
+    padding: 1px 30px;
+  }
+  header h1 {
+    font-size: 40px;
+  }
+  header h2 {
+    font-size: 100px;
+    margin: 75px;
+    text-indent: -75px;
+    max-width: 400px;
+  }
+
+  header:before {
+    position: absolute;
+    top: 160px;
+    left: 450px;
+  }
+
+  header:after {
+    position: absolute;
+    top: 220px;
+    left: 580px;
+  }
+
+  .intro:after {
+    position: absolute;
+    top: 330px;
+    left: 450px;
+  }
+
+  .preamble {
+    background-image: url("images/gear2.svg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: -50%;
+  }
+
+  .participation {
+    background-image: url("images/gear2.svg");
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position-x: 200px;
+    background-position-y: -10%;
+  }
+
+  .requirements {
+    background-image: url("images/gear2.svg");
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: 50% 110%;
+  }
+
+  .zen-resources {
+    text-align: right;
+    position: absolute;
+    top: 0;
+    right: 15px;
+  }
+
+  .summary {
+    margin-top: 0;
+  }
+
+  .summary, .preamble, #zen-supporting {
+    margin-left: 350px;
+  }
+
+  .design-selection {
+    position: absolute;
+    top: 625px;
+    left: 20px;
+    padding-bottom: 70px;
+  }
+
+  .design-archives {
+    position: absolute;
+    top: 1100px;
+    left: 20px;
+    padding-bottom: 0;
+  }
+
+  .design-selection, .design-archives {
+    color: #5E0730;
+    background-color: #EED29E;
+  }
+
+  .design-selection a, .design-archives a {
+    text-decoration: none;
+    color: #5E0730;
+  }
+
+  .design-selection a:hover, .design-archives a:hover {
+    color: #EEF0E9;
+    background-color: #5E0730;
+  }
+
+  p[role=contentinfo] {
+    background-color: black;
+    width: 100vw;
+    padding: 0.5rem 3rem;
+    position: static;
+    margin-left: -410px;
+    margin-bottom: -50px;
+    padding-bottom: 50px;
+  }
+
+  footer {
+    text-align: center;
+    margin-left: -200px;
+    padding-top: 55px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
